@@ -2,58 +2,114 @@
     padding: 5px;
 }
 
+body {
+    background-color: #ededf6;
+}
+
 ul {
-    text-decoration-style: none;
+    text-decoration-style: square;
+    font-family: Lato;
+    font-size: 18px;
+    color: #859cbb;
+}
+
+p {
+    font-family: Lato;
+    line-height: 1.4;
+    font-size: 18px;
+    padding: 10px;
+    color: #859cbb;
+}
+
+a {
+    font-family: Lato;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: Poppins;
+    font-size: 220%;
+    padding: 10px 10px 10px 10px;
+    font-weight: 600;
+    display: inline;
+    color: #3e4a56;
+    background-color: #92cccd;
+    float: left;
 }
 
 h2 {
     text-align: right;
+    font-family: Poppins;
+    font-size: 175%;
+    padding: 15px;
+    font-weight: 600;
+    color: #596b86;
+    
 }
 
-/*
-#flexible {
+h3 {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 125%;
+    padding: 10px;
+    font-weight: 400;
+}
+
+h4 {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 110%;
+    padding: 5px;
+    font-weight: 300;
+}
+
+main {
+    display: flexbox;
+    flex-wrap: wrap;
+}
+
+div {
+    padding: 10px;
+}
+
+section {
+    padding: 10px;
+}
+
+nav {
+    display: inline;
+    float: right;
+    padding: 20px;
+}
+
+nav a {
+    font-size: 150%;
+    color: #92cccd;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-bottom: 2px solid #92cccd;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: #31343d;
+}
+
+.banner-image {
+    background-image: url("..images/alexandru-bogdan-ghita-eM6WUs4nKMY-unsplash.jpg");
+}
+
+.subtitle {
     display: flex;
     flex-direction: column;
     border: solid 1px black;
 }
-
-#flexible-nav {
-    display: flex;
-    flex-direction: column;
-    border: solid 1px black;
-}
-
-#flexible-container {
-    display: flex;
-    flex-direction: column;
-    border: solid 1px black;
-}
-
-#flexible-about {
-    display: flex;
-    flex-direction: column;
-    border: solid 1px black;
-}
-
-#flexible-portfolio {
-    display: flex;
-    flex-direction: column;
-    border: solid 1px black;
-}
-
-#flexible-portfolio-content {
-    display: flex;
-    flex-direction: column;
-    border: solid 1px black;
-}
-
-#flexible-contact {
-    display: flex;
-    flex-direction: column;
-    border: solid 1px black;
-}
-*/ 
-
 
 .top-row-nav {
     display: flex;
@@ -73,23 +129,53 @@ h2 {
     border: solid 1px black;
 }
 
+.about-me-title {
+    background-image: url();
+    border-right: 2px solid #596b86;
+    padding: 20px;
+}
+
+.about-me-content {
+    text-indent: 20px;
+}
+
 .work-portfolio-parent {
     display: flex;
     flex-direction: row;
     border: solid 1px black;
 }
 
+.work-portfolio-title {
+    border-right: 2px solid #596b86;
+    padding: 20px;
+    padding-left: 30px;
+}
+
 .work-portfolio-content {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: row;
+    flex-direction: column;
     border: solid 1px black;
     width: 100%;
 }
 
 #project {
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
     flex-direction: row;
     border: solid 1px black;
+    min-height: 200px;
+    min-width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    /* background-color: red; */
+    width: 30%;
+}
+
+.project-1 {
+    background-image: url("..images/alexandru-bogdan-ghita-eM6WUs4nKMY-unsplash.jpg");
 }
 
 .contact-me-parent {
@@ -98,8 +184,20 @@ h2 {
     border: solid 1px black;
 }
 
+.contact-me-title {
+    border-right: 2px solid #596b86;
+    padding: 20px;
+}
+
 .contact-container {
+    padding: 0px;
     display: flex;
     flex-direction: row;
     border: solid 1px black;
+    text-indent: 0%;
+}
+
+#contact-div {
+    padding: 0px;
+    text-indent: 0%;
 }
