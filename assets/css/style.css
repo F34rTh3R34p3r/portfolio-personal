@@ -2,15 +2,22 @@
     padding: 5px;
 }
 
+:root {
+    }
+
 body {
     background-color: #ededf6;
+    max-width: 1400px;
+    margin: 0 auto;
+    border: 1px solid rgba(192, 192, 192, 0.5);
 }
 
-ul {
+ul li {
     text-decoration-style: square;
     font-family: Lato;
-    font-size: 18px;
-    color: #859cbb;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #141c27;
 }
 
 p {
@@ -18,12 +25,16 @@ p {
     line-height: 1.4;
     font-size: 18px;
     padding: 10px;
-    color: #859cbb;
+    color: #141c27;
 }
 
 a {
     font-family: Lato;
     font-size: 18px;
+}
+
+em {
+    font-weight: 900;
 }
 
 h1 {
@@ -44,7 +55,6 @@ h2 {
     padding: 15px;
     font-weight: 600;
     color: #596b86;
-    
 }
 
 h3 {
@@ -53,6 +63,7 @@ h3 {
     font-size: 125%;
     padding: 10px;
     font-weight: 400;
+    background-color: rgba(238, 238, 246, 0.7);
 }
 
 h4 {
@@ -61,6 +72,7 @@ h4 {
     font-size: 110%;
     padding: 5px;
     font-weight: 300;
+    background-color: rgba(238, 238, 246, 0.7);
 }
 
 main {
@@ -77,7 +89,8 @@ section {
 }
 
 nav {
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
     float: right;
     padding: 20px;
 }
@@ -102,37 +115,38 @@ nav a:hover {
 }
 
 .banner-image {
-    background-image: url("..images/alexandru-bogdan-ghita-eM6WUs4nKMY-unsplash.jpg");
+    background-image: url("../images/banner-industry-tech.jpg");
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .subtitle {
-    display: flex;
-    flex-direction: column;
-    border: solid 1px black;
+    border: solid 5px #92cccd;
+    background-color: #ededf6;
+    width: 60%;
+    float: right;
+    position: relative;
 }
 
 .top-row-nav {
     display: flex;
     flex-direction: column;
-    border: solid 1px black;
 }
 
 .content-container {
-    display: flex;
-    flex-direction: column;
-    border: solid 1px black;
+    width: 100%;
 }
 
 .about-me-parent {
     display: flex;
-    flex-direction: row;
-    border: solid 1px black;
 }
 
 .about-me-title {
-    background-image: url();
+    
     border-right: 2px solid #596b86;
     padding: 20px;
+    
 }
 
 .about-me-content {
@@ -142,7 +156,6 @@ nav a:hover {
 .work-portfolio-parent {
     display: flex;
     flex-direction: row;
-    border: solid 1px black;
 }
 
 .work-portfolio-title {
@@ -154,34 +167,54 @@ nav a:hover {
 .work-portfolio-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: row;
-    flex-direction: column;
-    border: solid 1px black;
-    width: 100%;
+    justify-content: space-evenly;
+    align-content: stretch;
 }
 
 #project {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    flex-direction: row;
-    border: solid 1px black;
-    min-height: 200px;
+    flex-grow: 1;
+    border: solid 5px #92cccd;
+    min-height: 250px;
     min-width: 300px;
     margin: 10px;
     border-radius: 20px;
-    /* background-color: red; */
-    width: 30%;
+    background-color: #ffffff80;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#project:hover {
+    opacity: 50%;
 }
 
 .project-1 {
-    background-image: url("..images/alexandru-bogdan-ghita-eM6WUs4nKMY-unsplash.jpg");
+    background-image: url("../images/alexandru-bogdan-ghita-eM6WUs4nKMY-unsplash.jpg");
+    flex-grow: 2;
+    flex-basis: 700px;
+}
+
+.project-2 {
+    background-image: url("../images/chris-ried-bN5XdU-bap4-unsplash.jpg");  
+}
+
+.project-3 {
+    background-image: url("../images/christopher-burns-Kj2SaNHG-hg-unsplash.jpg");  
+}
+
+.project-4 {
+    background-image: url("../images/joshua-sortino-LqKhnDzSF-8-unsplash.jpg");  
+}
+
+.project-5 {
+    background-image: url("../images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");  
 }
 
 .contact-me-parent {
     display: flex;
     flex-direction: row;
-    border: solid 1px black;
 }
 
 .contact-me-title {
@@ -192,12 +225,75 @@ nav a:hover {
 .contact-container {
     padding: 0px;
     display: flex;
-    flex-direction: row;
-    border: solid 1px black;
+    flex-wrap: wrap;
     text-indent: 0%;
 }
 
 #contact-div {
     padding: 0px;
+    margin: 0px;
     text-indent: 0%;
+    font-size: 60%;
+}
+
+
+@media screen and (max-width: 992px) {
+    .content-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .about-me-parent {
+        display: flex;
+        text-wrap: wrap;
+        flex-direction: column;
+    }   
+
+    .about-me-title {
+        border-right: none;
+        border-bottom: 2px solid #596b86;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .work-portfolio-parent {
+        display: flex;
+        text-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .work-portfolio-title {
+        border-right: none;
+        border-bottom: 2px solid #596b86;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .contact-me-parent {
+        display: flex;
+        text-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .contact-me-title {
+        border-right: none;
+        border-bottom: 2px solid #596b86;
+        padding: 10px;
+        margin: 0 auto;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
