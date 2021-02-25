@@ -2,9 +2,6 @@
     padding: 5px;
 }
 
-:root {
-    }
-
 body {
     background-color: #ededf6;
     max-width: 1400px;
@@ -33,6 +30,14 @@ a {
     font-size: 18px;
 }
 
+img {
+    width: 30%;
+    float: right;
+    border: 3px solid black;
+    margin: 20px;
+    border-radius: 50px;
+}
+
 em {
     font-weight: 900;
 }
@@ -57,6 +62,7 @@ h2 {
     color: #596b86;
 }
 
+/* The background-colors set for h3 and h4 allow for the project's titles to be more visible against their background image */
 h3 {
     text-align: center;
     font-family: Poppins;
@@ -88,6 +94,7 @@ section {
     padding: 10px;
 }
 
+/* Under a certain size of viewport, the nav elements stack vertically (instead of their default left-to-right) */
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -134,19 +141,13 @@ nav a:hover {
     flex-direction: column;
 }
 
-.content-container {
-    width: 100%;
-}
-
 .about-me-parent {
     display: flex;
 }
 
 .about-me-title {
-    
     border-right: 2px solid #596b86;
     padding: 20px;
-    
 }
 
 .about-me-content {
@@ -163,6 +164,8 @@ nav a:hover {
     padding: 20px;
     padding-left: 30px;
 }
+
+/* Allows for the projects to be oriented with even spacing */
 
 .work-portfolio-content {
     display: flex;
@@ -191,13 +194,13 @@ nav a:hover {
 }
 
 .project-1 {
-    background-image: url("../images/alexandru-bogdan-ghita-eM6WUs4nKMY-unsplash.jpg");
-    flex-grow: 2;
+    background-image: url("../images/AccessibilityHoriseon.jpg");
+    flex-grow: 4;
     flex-basis: 700px;
 }
 
 .project-2 {
-    background-image: url("../images/chris-ried-bN5XdU-bap4-unsplash.jpg");  
+    background-image: url("../images/ScratchGame.jpg");  
 }
 
 .project-3 {
@@ -215,6 +218,7 @@ nav a:hover {
 .contact-me-parent {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .contact-me-title {
@@ -236,17 +240,15 @@ nav a:hover {
     font-size: 60%;
 }
 
+/* Normally, the title <div>s and their related content are arranged as rows. Once the viewport becomes less than 992 pixels in width, the elements stack vertically. There are also some changes related to the borders of h2 elements */
 
 @media screen and (max-width: 992px) {
     .content-container {
-        display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         justify-self: center;
     }
 
     .about-me-parent {
-        display: flex;
         text-wrap: wrap;
         flex-direction: column;
     }   
@@ -259,8 +261,6 @@ nav a:hover {
     }
 
     .work-portfolio-parent {
-        display: flex;
-        text-wrap: wrap;
         flex-direction: column;
     }
 
@@ -272,7 +272,6 @@ nav a:hover {
     }
 
     .contact-me-parent {
-        display: flex;
         text-wrap: wrap;
         flex-direction: column;
     }
@@ -282,18 +281,28 @@ nav a:hover {
         border-bottom: 2px solid #596b86;
         padding: 10px;
         margin: 0 auto;
-        
     }
 }
 
+/* Once the viewport reaches under 768 pixels, the nav-elements stack upon each other vertically. */
+
 @media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .contact-container {
         flex-direction: column;
+        align-items: center;
     }
 
-    .navbar {
+    nav {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        align-items: center;
     }
 }

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -13,10 +12,12 @@
 </head>
 
 <body>
+    <!--The elements in the nav are subject to flex display-->
     <header class="top-row-nav">
         <div class="navbar">
             <h1>Daniel Pisani</h1> 
             <nav>
+                <!--These anchors lead towards sections of this page (by id) -->
                 <a href="#about-me-parent">About Me</a>
                 <a href="#work-portfolio-parent">Work</a>
                 <a href="#contact-me-parent">Contact Me</a>
@@ -25,28 +26,30 @@
         </div>
     </header>
 
-    <div class="banner-image">
-        <!--background image-->
+    <div class="banner-image" alt="banner of website; a dark blue background">
         <div class="subtitle">
             <h3>A Healthy Blend of Medicine, Tech, and Politics</h3>
         </div>
     </div>
 
-    <main class="content-container">
+    <!--All main parent containers have two sub-containers which are displayed as flex. They are stacked as columns when the viewport is under a certain width. -->
 
+    <main class="content-container">
         <section class="about-me-parent" id="about-me-parent">
             <div class="about-me-title">
                 <h2>About Me</h2>
             </div>
 
             <div class="about-me-content">
-                <!-- text indent p -->
                 <p>Hi, I'm <em>Daniel</em>. I'm a practicing Registered Dietitian who has an ongoing interest in the tech world. I like understanding how computers work, and I have big ideas about how technology can transform the medical and political world.</p>
+                <img src="assets/images/Danielphoto.jpg" alt="photo of Daniel">
                 <p>A few words to describe myself. I consider myself:</p>
                 <ul>
-                    <li> ☑️ Curious and inquisitive. (Evidence: learning four languages on my own, on top of my native French and English.)</li>
-                    <li> ☑️ Persistent and patient. (Evidence: writing four books in four years, running half-marathons.)</li>
-                    <li> ☑️ Creative and inventive. (Evidence: playing guitar for 15 years, learning sales and marketing copywriting</li>
+                    <li> ☑️ Curious and inquisitive.</li>
+                    <li>(Evidence: learning four languages on my own, on top of my native French and English.)</li>
+                    <li> ☑️ Persistent and patient.</li>
+                    <li>(Evidence: writing four books in four years, running half-marathons.)</li>
+                    <li> ☑️ Creative and inventive.</li> <li>(Evidence: playing guitar for 15 years, learning sales and marketing copywriting</li>
                 </ul> 
                 <p>Check the list of my projects below:</p>
             </div>
@@ -56,54 +59,55 @@
             <div class="work-portfolio-title">
                 <h2>Work</h2>
             </div>
-
             <div class="work-portfolio-content">
-                <div class="project-1" id="project">
-                    <div class="inner-text">
-                        <h3>Surf Report</h3>
-                        <h4>MERN Stack</h4>
-                    </div>
-                </div>
 
-                <div class="project-2" id="project">
-                    <div class="inner-text">
-                        <h3>LED Wall</h3>
-                        <h4>Node/IoT</h4>
-                    </div>
-                </div>
+                <!--The five projects. They are a set of anchors with divs placed inside. They are also subject to flex display. -->
 
-                <div class="project-3" id="project">
+                <a href="https://f34rth3r34p3r.github.io/HoriseonAccessibility/" alt="Image of accessibility application. Select to access directly." target="_blank" class="project-1" id="project">
                     <div class="inner-text">
-                        <h3>LED Wall</h3>
+                        <h3>HoriSEOn Accessibility</h3>
+                        <h4>HTML/CSS</h4>
+                    </div>   
+                </a>
+
+                <a href="https://scratch.mit.edu/projects/484492543/" alt="Image of Scratch application. Select to access directly." target="_blank" class="project-2" id="project">
+                    <div class="inner-text">
+                        <h3>Cheetos Chase</h3>
+                        <h4>Scratch</h4>
+                    </div>
+                </a>
+
+                <a href="http://www.moodlight.org/" alt="Image of moodlight application. Select to access directly."target="_blank" class="project-3" id="project">
+                    <div class="inner-text">
+                        <h3>Mood Light</h3>
                         <h4>React/JavaScript/CSS</h4>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-4" id="project">
-                    <img src="" alt=""/>
+                <a href="https://www.jigsawplanet.com/" alt="Image of jigsaw puzzle application. Select to access directly."target="_blank"  class="project-4" id="project">
                     <div class="inner-text">
                         <h3>Pastel Puzzles</h3>
                         <h4>MERN Stack</h4>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-5" id="project">
-                    <img src="" alt=""/>
+                <a href="https://m.plonga.com/adventure/Run-Buddy-Game" alt="Image of run buddy application. Select to access directly." target="_blank"  class="project-5" id="project">
                     <div class="inner-text">
                         <h3>Run Buddy</h3>
                         <h4>HTML/CSS</h4>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
 
+        <!--The elements in the nav are subject to flex display-->
         <section class="contact-me-parent" id ="contact-me-parent">
             <div class="contact-me-title">
                 <h2>Contact Me</h2>
             </div>
             <div class="contact-me-content">
                 <nav class="contact-container">
-                    <h3>613-794-3977</h3>
+                    <h3><em>613-794-3977</em></h3>
                     <a href="mailto:danielpisani12@hotmail.com" >danielpisani12@hotmail.com</a>
                     <a href="https://github.com/F34rTh3R34p3r/" target="_blank">Github</a>
                     <a href="https://www.linkedin.com/in/danielpisani/" target="_blank">LinkedIn</a>
@@ -112,10 +116,6 @@
             </div>
         </section>
     </main>
-<footer>
-</footer>
-
-
 </body>
 
 </html>
