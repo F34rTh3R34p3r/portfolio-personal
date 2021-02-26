@@ -5,7 +5,7 @@
 body {
     background-color: #ededf6;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 0px auto;
     border: 1px solid rgba(192, 192, 192, 0.5);
 }
 
@@ -93,6 +93,10 @@ div {
 section {
     padding: 10px;
 }
+
+.accessLinks {
+    display: none;
+} 
 
 /* Under a certain size of viewport, the nav elements stack vertically (instead of their default left-to-right) */
 nav {
@@ -219,6 +223,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 100px;
 }
 
 .contact-me-title {
@@ -304,5 +309,9 @@ nav a:hover {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
+    }
+
+    .contact-me-parent {
+        margin-bottom: 200px;
     }
 }
